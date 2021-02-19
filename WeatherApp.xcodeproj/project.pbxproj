@@ -18,6 +18,7 @@
 		FB20586D25DC427500D65915 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20586C25DC427500D65915 /* MainTableViewController.swift */; };
 		FB20587025DC451200D65915 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20586F25DC451200D65915 /* DetailViewController.swift */; };
 		FB20587425DC45CE00D65915 /* WeatherMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20587325DC45CE00D65915 /* WeatherMainTableViewCell.swift */; };
+		FB3663CF25E01550000E3862 /* DetailDayWeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3663CE25E01550000E3862 /* DetailDayWeatherViewCell.swift */; };
 		FB3E13C825DD656200AD49CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E13C725DD656200AD49CB /* Extensions.swift */; };
 		FBD8112D25DC834E0005636D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD8112C25DC834E0005636D /* LocationService.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		FB20586C25DC427500D65915 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		FB20586F25DC451200D65915 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FB20587325DC45CE00D65915 /* WeatherMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMainTableViewCell.swift; sourceTree = "<group>"; };
+		FB3663CE25E01550000E3862 /* DetailDayWeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDayWeatherViewCell.swift; sourceTree = "<group>"; };
 		FB3E13C725DD656200AD49CB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FBD8112C25DC834E0005636D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 			children = (
 				FB20586C25DC427500D65915 /* MainTableViewController.swift */,
 				FB20586F25DC451200D65915 /* DetailViewController.swift */,
+				FB3663CE25E01550000E3862 /* DetailDayWeatherViewCell.swift */,
 				FB20587325DC45CE00D65915 /* WeatherMainTableViewCell.swift */,
 				FB20584E25DC061E00D65915 /* Main.storyboard */,
 				FB20585325DC062000D65915 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				FB20586525DC3D6E00D65915 /* WeatherData.swift in Sources */,
 				FB20584925DC061E00D65915 /* AppDelegate.swift in Sources */,
 				FB20586225DC3B4900D65915 /* NetworkParameters.swift in Sources */,
+				FB3663CF25E01550000E3862 /* DetailDayWeatherViewCell.swift in Sources */,
 				FB20585F25DC3AA600D65915 /* NetworkService.swift in Sources */,
 				FB20586D25DC427500D65915 /* MainTableViewController.swift in Sources */,
 				FB3E13C825DD656200AD49CB /* Extensions.swift in Sources */,
