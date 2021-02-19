@@ -12,6 +12,14 @@ class DetailViewController: UIViewController, MainTableViewDelegate {
     // MARK: - IBOutlets
     @IBOutlet weak var detailNameCityLabel: UILabel!
     @IBOutlet weak var detailTempLabel: UILabel!
+    @IBOutlet weak var detailWindSpeedLabel: UILabel!
+    @IBOutlet weak var detailHumidityLabel: UILabel!
+    @IBOutlet weak var detailPressureLabel: UILabel!
+    @IBOutlet weak var detailMaxTempLabel: UILabel!
+    @IBOutlet weak var delailMeanTempLabel: UILabel!
+    @IBOutlet weak var detailMinTempLabel: UILabel!
+    
+    
     @IBAction func pushCancelButton(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
@@ -33,7 +41,17 @@ class DetailViewController: UIViewController, MainTableViewDelegate {
         super.viewDidLoad()
         
         detailNameCityLabel.text = nameOfCity
-        detailTempLabel.text = String((weather?.fact.temp)!)
+        detailTempLabel.text = String((weather?.fact.temp)!) + " " + getConditionEmoju(condition: weather?.fact.condition ?? Condition.err)
+        // MARK: - left column
+        detailWindSpeedLabel.text = "💨" + " " + String((weather?.fact.windSpeed)!) + " " + "m/s"
+        detailHumidityLabel.text = "💧" + " " + String((weather?.fact.humidity)!) + " " + "%"
+        detailPressureLabel.text = "🧭" + " " + String((weather?.fact.pressureMm)!) + " " + "mm"
+        // MARK: - left column
+        detailMaxTempLabel.text = "⬆️" + "  " + String((weather?.forecasts[0].parts.day.tempMax)!) + " " + "°С"
+        delailMeanTempLabel.text = "🔃" + "  " + String((weather?.forecasts[0].parts.day.tempAvg)!) + " " + "°С"
+        detailMinTempLabel.text = "⬇️" + "  " + String((weather?.forecasts[0].parts.day.tempMin)!) + " " + "°С"
+        
+        
     }
     
 }

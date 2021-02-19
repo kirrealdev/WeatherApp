@@ -96,6 +96,9 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curr Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-eW-24Q">
                                 <rect key="frame" x="82" y="196" width="250" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="F38-wz-Vyx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,16 +109,64 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhD-Iy-2rc">
+                                <rect key="frame" x="40" y="310" width="101" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-7j-LgY">
+                                <rect key="frame" x="40" y="369" width="76" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pressure mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uam-Kp-mmb">
+                                <rect key="frame" x="40" y="428" width="115" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVa-7E-NBn">
+                                <rect key="frame" x="287" y="310" width="87" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mean temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-D0-cyh">
+                                <rect key="frame" x="275" y="369" width="99" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-Vo-1Pf">
+                                <rect key="frame" x="292" y="428" width="82" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dUB-vA-G6B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fcW-Vo-1Pf" firstAttribute="top" secondItem="eEf-D0-cyh" secondAttribute="bottom" constant="35" id="5fU-9f-x0a"/>
+                            <constraint firstItem="oVa-7E-NBn" firstAttribute="top" secondItem="hlv-eW-24Q" secondAttribute="bottom" constant="60" id="76z-MC-7Bh"/>
+                            <constraint firstItem="GGY-7j-LgY" firstAttribute="leading" secondItem="dUB-vA-G6B" secondAttribute="leading" constant="40" id="97Y-sU-fVE"/>
                             <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="hlv-eW-24Q" secondAttribute="trailing" constant="82" id="A9X-8e-KHI"/>
+                            <constraint firstItem="GGY-7j-LgY" firstAttribute="top" secondItem="xhD-Iy-2rc" secondAttribute="bottom" constant="35" id="BA8-dv-TVN"/>
                             <constraint firstItem="hlv-eW-24Q" firstAttribute="leading" secondItem="dUB-vA-G6B" secondAttribute="leading" constant="82" id="HXv-6I-NkL"/>
                             <constraint firstItem="7ow-p9-9oi" firstAttribute="top" secondItem="dUB-vA-G6B" secondAttribute="top" constant="25" id="KPz-6a-pw5"/>
+                            <constraint firstItem="xhD-Iy-2rc" firstAttribute="top" secondItem="hlv-eW-24Q" secondAttribute="bottom" constant="60" id="LOI-IZ-0Se"/>
+                            <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="eEf-D0-cyh" secondAttribute="trailing" constant="40" id="NfW-5N-cKh"/>
+                            <constraint firstItem="Uam-Kp-mmb" firstAttribute="leading" secondItem="dUB-vA-G6B" secondAttribute="leading" constant="40" id="P59-JB-7VU"/>
+                            <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="fcW-Vo-1Pf" secondAttribute="trailing" constant="40" id="Pia-EV-X7m"/>
                             <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="VuS-52-mLx" secondAttribute="trailing" constant="57" id="aBi-r3-kJf"/>
                             <constraint firstItem="VuS-52-mLx" firstAttribute="leading" secondItem="dUB-vA-G6B" secondAttribute="leading" constant="57" id="e3s-L0-iSa"/>
+                            <constraint firstItem="Uam-Kp-mmb" firstAttribute="top" secondItem="GGY-7j-LgY" secondAttribute="bottom" constant="35" id="f8I-XM-WhP"/>
+                            <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="oVa-7E-NBn" secondAttribute="trailing" constant="40" id="fuq-iw-yJ8"/>
+                            <constraint firstItem="xhD-Iy-2rc" firstAttribute="leading" secondItem="dUB-vA-G6B" secondAttribute="leading" constant="40" id="gH3-uv-gxI"/>
                             <constraint firstItem="hlv-eW-24Q" firstAttribute="top" secondItem="VuS-52-mLx" secondAttribute="bottom" constant="36" id="hgk-y6-ALs"/>
+                            <constraint firstItem="eEf-D0-cyh" firstAttribute="top" secondItem="oVa-7E-NBn" secondAttribute="bottom" constant="35" id="jMs-LI-s3X"/>
                             <constraint firstItem="dUB-vA-G6B" firstAttribute="trailing" secondItem="7ow-p9-9oi" secondAttribute="trailing" constant="18" id="kga-z5-Z5d"/>
                             <constraint firstItem="VuS-52-mLx" firstAttribute="top" secondItem="7ow-p9-9oi" secondAttribute="bottom" constant="37" id="uJt-rp-kaR"/>
                         </constraints>
@@ -123,8 +174,14 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="delailMeanTempLabel" destination="eEf-D0-cyh" id="haE-rM-g3o"/>
+                        <outlet property="detailHumidityLabel" destination="GGY-7j-LgY" id="RWa-bL-qF3"/>
+                        <outlet property="detailMaxTempLabel" destination="oVa-7E-NBn" id="s61-qZ-W1y"/>
+                        <outlet property="detailMinTempLabel" destination="fcW-Vo-1Pf" id="494-GB-Tgy"/>
                         <outlet property="detailNameCityLabel" destination="VuS-52-mLx" id="M4d-b0-vj8"/>
+                        <outlet property="detailPressureLabel" destination="Uam-Kp-mmb" id="Umo-zi-GiV"/>
                         <outlet property="detailTempLabel" destination="hlv-eW-24Q" id="Qdk-Hs-C26"/>
+                        <outlet property="detailWindSpeedLabel" destination="xhD-Iy-2rc" id="lsR-gc-Jg1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqm-NM-LtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

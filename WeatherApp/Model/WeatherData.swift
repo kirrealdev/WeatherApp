@@ -9,7 +9,6 @@ import Foundation
 
 struct WeatherData: Codable {
     
-    let info: Info
     let fact: Fact
     let forecasts: [Forecast]
 }
@@ -17,18 +16,18 @@ struct WeatherData: Codable {
 struct Fact: Codable {
     
     let temp: Int
-    let icon: String
     let condition: Condition
     let windSpeed: Double
     let pressureMm: Int
+    let humidity: Int
     
     enum CodingKeys: String, CodingKey {
         
         case temp
-        case icon
         case condition
         case windSpeed = "wind_speed"
         case pressureMm = "pressure_mm"
+        case humidity
     }
 }
 
@@ -44,13 +43,9 @@ enum Condition: String, Codable {
 }
 
 
-struct Info: Codable {
-    
-    let url: String
-}
-
 struct Forecast: Codable {
     
+    let date: String
     let parts: Parts
 }
 
@@ -61,11 +56,12 @@ struct Parts: Codable {
 
 struct Hour: Codable {
     
-    let tempMin, tempMax: Int?
+    let tempMin, tempMax, tempAvg: Int?
 
     enum CodingKeys: String, CodingKey {
         
         case tempMin = "temp_min"
         case tempMax = "temp_max"
+        case tempAvg = "temp_avg"
     }
 }
