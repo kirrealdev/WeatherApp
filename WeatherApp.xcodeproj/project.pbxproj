@@ -72,10 +72,11 @@
 		FB20584725DC061E00D65915 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				FB20587825DC48B100D65915 /* View */,
+				FB20587825DC48B100D65915 /* ViewControllers */,
+				FB3663D225E026DD000E3862 /* View */,
+				FB20587725DC486300D65915 /* Model */,
 				FB20587B25DC4AEC00D65915 /* Service */,
 				FB20587925DC48DC00D65915 /* Parameters */,
-				FB20587725DC486300D65915 /* Model */,
 				FB20585125DC062000D65915 /* Assets.xcassets */,
 				FB20585625DC062000D65915 /* Info.plist */,
 				FB20584825DC061E00D65915 /* AppDelegate.swift */,
@@ -92,18 +93,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FB20587825DC48B100D65915 /* View */ = {
+		FB20587825DC48B100D65915 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				FB20586C25DC427500D65915 /* MainTableViewController.swift */,
 				FB20586F25DC451200D65915 /* DetailViewController.swift */,
-				FB3663CE25E01550000E3862 /* DetailDayWeatherViewCell.swift */,
-				FB20587325DC45CE00D65915 /* WeatherMainTableViewCell.swift */,
-				FB20584E25DC061E00D65915 /* Main.storyboard */,
-				FB20585325DC062000D65915 /* LaunchScreen.storyboard */,
-				FB3E13C725DD656200AD49CB /* Extensions.swift */,
 			);
-			path = View;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		FB20587925DC48DC00D65915 /* Parameters */ = {
@@ -121,6 +117,18 @@
 				FBD8112C25DC834E0005636D /* LocationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		FB3663D225E026DD000E3862 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB3663CE25E01550000E3862 /* DetailDayWeatherViewCell.swift */,
+				FB20587325DC45CE00D65915 /* WeatherMainTableViewCell.swift */,
+				FB3E13C725DD656200AD49CB /* Extensions.swift */,
+				FB20584E25DC061E00D65915 /* Main.storyboard */,
+				FB20585325DC062000D65915 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
