@@ -24,14 +24,14 @@ struct LocationService {
         
         for cityName in citiesData {
             getLocationFor(cityName) { (coordinate, error) in
-                guard let coordinate = coordinate, error == nil else { return }
+            guard let coordinate = coordinate, error == nil else { return }
                 
-                networkService.loadBasicWeatherDataByLocation(lat: coordinate.latitude, long: coordinate.longitude, onComplete: { (weather) in
-                    onComplete(cityName, weather) } )
+            networkService.loadBasicWeatherDataByLocation(lat: coordinate.latitude, long: coordinate.longitude, onComplete: { (weather) in
+                onComplete(cityName, weather) } )
                 { (error) in
                     NSLog(error.localizedDescription)
                 }
-                }
+            }
         }
         }
 
