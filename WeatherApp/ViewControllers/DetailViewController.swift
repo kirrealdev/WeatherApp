@@ -55,7 +55,7 @@ class DetailViewController: UIViewController, MainTableViewDelegate, UITableView
     
         // MARK: - left column (today weather)
         detailMaxTempLabel.text = "⬆️" + "  " + String((weather?.forecasts[0].parts.day.tempMax)!) + " " + "°С"
-        delailMeanTempLabel.text = "🔃" + "  " + String((weather?.forecasts[0].parts.day.tempAvg)!) + " " + "°С"
+        delailMeanTempLabel.text = "↕️" + "  " + String((weather?.forecasts[0].parts.day.tempAvg)!) + " " + "°С"
         detailMinTempLabel.text = "⬇️" + "  " + String((weather?.forecasts[0].parts.day.tempMin)!) + " " + "°С"
     }
     
